@@ -5,7 +5,7 @@ export default class Products {
 
   async getAll() {
     const tickets = await fetch(
-      "https://ahj-http-help-desk-backend.herokuapp.com//?method=allTickets"
+      "https://ahj-http-help-desk-backend.herokuapp.com/?method=allTickets"
     );
     return tickets.json();
   }
@@ -21,7 +21,7 @@ export default class Products {
   }
 
   async delete(id) {
-    await fetch(`https://ahj-http-help-desk-backend.herokuapp.com//?id=${id}`, {
+    await fetch(`https://ahj-http-help-desk-backend.herokuapp.com/?id=${id}`, {
       method: "DELETE",
     });
   }
